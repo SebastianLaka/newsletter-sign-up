@@ -29,11 +29,18 @@ body {
   .newsletter-body {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 30% 70%;
-        grid-template-rows: 30% 70%;
+    -ms-grid-rows: 35% 65%;
+        grid-template-rows: 35% 65%;
     height: 100vh;
     width: 100%;
-    background-color: red;
+  }
+  .newsletter-body .newsletter-image-area {
+    background-image: url(../images/illustration-sign-up-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1.6em;
+    border-bottom-right-radius: 1.6em;
   }
 }
 /*# sourceMappingURL=style.css.map */
