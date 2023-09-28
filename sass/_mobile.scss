@@ -1,22 +1,16 @@
 @media (min-width: 280px) {
   .newsletter-body {
     display: grid;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 30% 70%;
     height: 100vh;
     width: 100%;
     .newsletter-image-area {
-      position: relative;
-      &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        border-bottom-left-radius: 1.6em;
+      background-image: url(../images/illustration-sign-up-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border-bottom-left-radius: 1.6em;
       border-bottom-right-radius: 1.6em;
-       
-      }
     }
   }
 }
+
