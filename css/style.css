@@ -25,7 +25,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media (min-width: 280px) {
+@media (min-width: 280px) and (max-width: 768px) {
   .newsletter-body {
     display: -ms-grid;
     display: grid;
@@ -37,7 +37,7 @@ body {
   .newsletter-body .newsletter-image-area {
     background-image: url(../images/illustration-sign-up-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border-bottom-left-radius: 1.6em;
     border-bottom-right-radius: 1.6em;
   }
