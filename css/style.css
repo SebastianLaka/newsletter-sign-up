@@ -25,7 +25,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 280px) {
   .newsletter-body {
     display: -ms-grid;
     display: grid;
@@ -40,6 +40,29 @@ body {
     background-size: cover;
     border-bottom-left-radius: 1.6em;
     border-bottom-right-radius: 1.6em;
+  }
+  .newsletter-body .newsletter-description {
+    padding: 3em 1.5em;
+  }
+  .newsletter-body .newsletter-description__header {
+    font-size: 4.5rem;
+    color: #36384e;
+  }
+  .newsletter-body .newsletter-description__info {
+    font-size: 1.6rem;
+    margin-top: 1.25em;
+  }
+  .newsletter-body .newsletter-description .offers-area {
+    margin: 3em 0;
+    list-style-type: none;
+  }
+  .newsletter-body .newsletter-description .offers-area__info {
+    margin: .5em 0;
+    padding: .5em 0;
+    line-height: 150%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #36384e;
   }
 }
 /*# sourceMappingURL=style.css.map */
