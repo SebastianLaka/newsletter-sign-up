@@ -54,15 +54,33 @@ body {
   }
   .newsletter-body .newsletter-description .offers-area {
     margin: 3em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style-type: none;
   }
   .newsletter-body .newsletter-description .offers-area__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: .5em 0;
     padding: .5em 0;
     line-height: 150%;
     font-size: 1.4rem;
     font-weight: 700;
     color: #36384e;
+  }
+  .newsletter-body .newsletter-description .offers-area__info--svg {
+    width: 1.6em;
+    height: 1.6em;
+    margin-right: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

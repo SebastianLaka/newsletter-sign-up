@@ -23,14 +23,24 @@
       }
       .offers-area{
         margin: 3em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         list-style-type: none;
         &__info{
+          display: flex;
+          
           margin: .5em 0;
           padding: .5em 0;
           line-height: 150%;
           font-size: 1.4rem;
           font-weight: $bold;
           color: $Charcoal-Grey;
+          &--svg{
+            width: 1.6em;
+            height: 1.6em;
+            margin-right: 1em;
+          }
         }
       }
     }
