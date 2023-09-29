@@ -55,14 +55,15 @@ body {
     padding: 3em 1.5em;
   }
   .newsletter-body .newsletter-description__header {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: #36384e;
   }
   .newsletter-body .newsletter-description__info {
     font-size: 1.6rem;
+    padding: .5em 0;
   }
   .newsletter-body .newsletter-description .offers-area {
-    margin: 3em 0;
+    margin: 1em 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -79,8 +80,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: .5em 0;
-    padding: .5em 0;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
     line-height: 150%;
     font-size: 1.4rem;
     font-weight: 700;
@@ -100,8 +101,51 @@ body {
             justify-content: space-between;
     margin-bottom: 1em;
   }
+  .newsletter-body .newsletter-description .interactive-area .label-area__e-mail {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #36384e;
+  }
   .newsletter-body .newsletter-description .interactive-area .label-area__requierd {
     visibility: hidden;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area__input, .newsletter-body .newsletter-description .interactive-area .verification-area__cta {
+    width: 100%;
+    padding: 1.4em;
+    border-radius: 8px;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area__input::-webkit-input-placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta::-webkit-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area__input:-ms-input-placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta:-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area__input::-ms-input-placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta::-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area__input::placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta::placeholder {
+    font-size: 1.3rem;
+  }
+  .newsletter-body .newsletter-description .interactive-area .verification-area__cta {
+    margin-top: 1.5em;
+    border: none;
+    background-color: #242742;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@media (min-width: 280px){
+@media (min-width: 280px) {
   .newsletter-body {
     display: grid;
     grid-template-rows: 30% 70%;
@@ -11,51 +11,78 @@
       border-bottom-left-radius: 1.6em;
       border-bottom-right-radius: 1.6em;
     }
-    .newsletter-description{
+    .newsletter-description {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 3em 1.5em;
-      &__header{
-        font-size: 4.5rem;
+      &__header {
+        font-size: 4rem;
         color: $Charcoal-Grey;
       }
-      &__info{
+      &__info {
         font-size: 1.6rem;
+        padding: .5em 0;
       }
-      .offers-area{
-        margin: 3em 0;
+      .offers-area {
+        margin: 1em 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         list-style-type: none;
-        &__info{
+        &__info {
           display: flex;
-          
-          margin: .5em 0;
-          padding: .5em 0;
+          margin: 0.5em 0;
+          padding: 0.5em 0;
           line-height: 150%;
           font-size: 1.4rem;
           font-weight: $bold;
           color: $Charcoal-Grey;
-          &--svg{
+          &--svg {
             width: 1.6em;
             height: 1.6em;
             margin-right: 1em;
           }
         }
       }
-      .interactive-area{
-        .label-area{
+      .interactive-area {
+        .label-area {
           display: flex;
           justify-content: space-between;
           margin-bottom: 1em;
-          &__requierd{
+          &__e-mail {
+            font-weight: $bold;
+            font-size: 1.2rem;
+            color: $Charcoal-Grey;
+          }
+          &__requierd {
             visibility: hidden;
+          }
+        }
+        .verification-area {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &__input, &__cta{
+            width: 100%;
+            padding: 1.4em;
+            
+            border-radius: 8px;
+            &::placeholder {
+              font-size: 1.3rem;
+            }
+          }
+          &__cta {
+            margin-top: 1.5em;
+            border: none;
+            background-color: $Dark-Slate-Grey;
+            color: $White;
+            font-weight: $bold;
+            letter-spacing: 0.03em;
+            cursor: pointer;
           }
         }
       }
     }
   }
 }
-
