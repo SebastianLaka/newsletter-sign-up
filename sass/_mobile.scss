@@ -46,7 +46,14 @@
         }
       }
       .interactive-area{
-
+        .label-area{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1em;
+          &__requierd{
+            visibility: hidden;
+          }
+        }
       }
     }
   }
