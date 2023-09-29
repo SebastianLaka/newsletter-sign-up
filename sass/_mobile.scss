@@ -12,6 +12,9 @@
       border-bottom-right-radius: 1.6em;
     }
     .newsletter-description{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding: 3em 1.5em;
       &__header{
         font-size: 4.5rem;
@@ -19,7 +22,6 @@
       }
       &__info{
         font-size: 1.6rem;
-        margin-top: 1.25em;
       }
       .offers-area{
         margin: 3em 0;
@@ -42,6 +44,9 @@
             margin-right: 1em;
           }
         }
+      }
+      .interactive-area{
+
       }
     }
   }

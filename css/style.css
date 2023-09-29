@@ -42,6 +42,16 @@ body {
     border-bottom-right-radius: 1.6em;
   }
   .newsletter-body .newsletter-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 3em 1.5em;
   }
   .newsletter-body .newsletter-description__header {
@@ -50,7 +60,6 @@ body {
   }
   .newsletter-body .newsletter-description__info {
     font-size: 1.6rem;
-    margin-top: 1.25em;
   }
   .newsletter-body .newsletter-description .offers-area {
     margin: 3em 0;
