@@ -158,4 +158,13 @@ body {
     height: 40vh;
   }
 }
+
+@media (min-height: 475px) {
+  .newsletter-body .newsletter-image-area {
+    height: 350px;
+  }
+  .newsletter-body .newsletter-description {
+    height: 600px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

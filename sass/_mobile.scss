@@ -94,3 +94,14 @@
     }
   }
 }
+@media(min-height: 475px){
+  .newsletter-body{
+ 
+    .newsletter-image-area{
+      height: 350px;
+    }
+    .newsletter-description{
+      height: 600px;
+    }
+  }
+}
