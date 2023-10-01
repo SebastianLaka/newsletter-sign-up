@@ -54,13 +54,14 @@ body {
             justify-content: space-between;
     padding: 3em 1.5em;
   }
-  .newsletter-body .newsletter-description__header {
+  .newsletter-body .newsletter-description .newsletter-description-heading__header {
     font-size: 4rem;
     color: #36384e;
   }
-  .newsletter-body .newsletter-description__info {
+  .newsletter-body .newsletter-description .newsletter-description-heading__info {
     font-size: 1.6rem;
     padding: .5em 0;
+    margin: 1em 0;
   }
   .newsletter-body .newsletter-description .offers-area {
     margin: 1em 0;
@@ -149,22 +150,25 @@ body {
   }
 }
 
-@media (min-height: 375px) {
+@media (min-width: 375px) {
   .newsletter-body {
     -ms-grid-rows: 40% 60%;
         grid-template-rows: 40% 60%;
   }
-  .newsletter-body .newsletter-image-area {
-    height: 40vh;
+  .newsletter-body .newsletter-description .offers-area__info {
+    font-size: 1.6rem;
   }
 }
 
-@media (min-height: 475px) {
+@media (min-width: 475px) {
   .newsletter-body .newsletter-image-area {
     height: 350px;
   }
   .newsletter-body .newsletter-description {
     height: 600px;
+  }
+  .newsletter-body .newsletter-description .newsletter-description-heading__header {
+    font-size: 4.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

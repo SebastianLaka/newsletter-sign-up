@@ -16,6 +16,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 3em 1.5em;
+      .newsletter-description-heading{
       &__header {
         font-size: 4rem;
         color: $Charcoal-Grey;
@@ -23,7 +24,9 @@
       &__info {
         font-size: 1.6rem;
         padding: .5em 0;
+        margin: 1em 0;
       }
+    }
       .offers-area {
         margin: 1em 0;
         display: flex;
@@ -86,22 +89,30 @@
     }
   }
 }
-@media(min-height: 375px){
+@media(min-width: 375px){
   .newsletter-body{
     grid-template-rows: 40% 60%;
-    .newsletter-image-area{
-      height: 40vh;
+    .newsletter-description{
+    .offers-area{
+      &__info{
+        font-size: 1.6rem;
+      }
     }
   }
+  }
 }
-@media(min-height: 475px){
+@media(min-width: 475px){
   .newsletter-body{
- 
     .newsletter-image-area{
       height: 350px;
     }
     .newsletter-description{
       height: 600px;
+      .newsletter-description-heading{
+        &__header{
+          font-size: 4.5rem;
+        }
+      }
     }
   }
 }
