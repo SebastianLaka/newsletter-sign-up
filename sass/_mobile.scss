@@ -2,7 +2,7 @@
   .newsletter-body {
     display: grid;
     grid-template-rows: 30% 70%;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     .newsletter-image-area {
       background-image: url(../images/illustration-sign-up-mobile.svg);
@@ -83,6 +83,14 @@
           }
         }
       }
+    }
+  }
+}
+@media(min-height: 375px){
+  .newsletter-body{
+    grid-template-rows: 40% 60%;
+    .newsletter-image-area{
+      height: 40vh;
     }
   }
 }
