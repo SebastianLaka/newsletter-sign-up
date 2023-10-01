@@ -27,19 +27,26 @@ body {
 
 @media (min-width: 280px) {
   .newsletter-body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 30% 70%;
-        grid-template-rows: 30% 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100vh;
     width: 100%;
   }
   .newsletter-body .newsletter-image-area {
-    background-image: url(../images/illustration-sign-up-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
     border-bottom-left-radius: 1.6em;
     border-bottom-right-radius: 1.6em;
+    width: 100%;
   }
   .newsletter-body .newsletter-description {
     display: -webkit-box;
@@ -52,7 +59,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 3em 1.5em;
+    padding: 0 1.5em;
+    margin: 6.5em 0;
+    height: 100%;
   }
   .newsletter-body .newsletter-description .newsletter-description-heading__header {
     font-size: 4rem;
@@ -145,28 +154,11 @@ body {
     background-color: #242742;
     color: white;
     font-weight: 700;
-    letter-spacing: 0.03em;
     cursor: pointer;
   }
 }
 
-@media (min-width: 375px) {
-  .newsletter-body {
-    -ms-grid-rows: 40% 60%;
-        grid-template-rows: 40% 60%;
-  }
-  .newsletter-body .newsletter-description .offers-area__info {
-    font-size: 1.6rem;
-  }
-}
-
 @media (min-width: 475px) {
-  .newsletter-body .newsletter-image-area {
-    height: 350px;
-  }
-  .newsletter-body .newsletter-description {
-    height: 600px;
-  }
   .newsletter-body .newsletter-description .newsletter-description-heading__header {
     font-size: 4.5rem;
   }

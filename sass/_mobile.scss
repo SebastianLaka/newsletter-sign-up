@@ -1,21 +1,23 @@
 @media (min-width: 280px) {
   .newsletter-body {
-    display: grid;
-    grid-template-rows: 30% 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     .newsletter-image-area {
-      background-image: url(../images/illustration-sign-up-mobile.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
       border-bottom-left-radius: 1.6em;
       border-bottom-right-radius: 1.6em;
+      width: 100%;
     }
     .newsletter-description {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 3em 1.5em;
+      padding: 0 1.5em;
+      margin: 6.5em 0;
+      height: 100%;
       .newsletter-description-heading{
       &__header {
         font-size: 4rem;
@@ -69,7 +71,6 @@
           &__input, &__cta{
             width: 100%;
             padding: 1.4em;
-            
             border-radius: 8px;
             &::placeholder {
               font-size: 1.3rem;
@@ -81,7 +82,7 @@
             background-color: $Dark-Slate-Grey;
             color: $White;
             font-weight: $bold;
-            letter-spacing: 0.03em;
+            
             cursor: pointer;
           }
         }
@@ -89,25 +90,9 @@
     }
   }
 }
-@media(min-width: 375px){
-  .newsletter-body{
-    grid-template-rows: 40% 60%;
-    .newsletter-description{
-    .offers-area{
-      &__info{
-        font-size: 1.6rem;
-      }
-    }
-  }
-  }
-}
 @media(min-width: 475px){
   .newsletter-body{
-    .newsletter-image-area{
-      height: 350px;
-    }
     .newsletter-description{
-      height: 600px;
       .newsletter-description-heading{
         &__header{
           font-size: 4.5rem;
