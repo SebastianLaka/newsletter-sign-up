@@ -4,20 +4,36 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 15% 70% 15%;
         background-color: $Charcoal-Grey;
-    
         .newsletter-image-area{
+            display: none;
+        }
+        .newsletter-image-area-medium{
             grid-column: 2/3;
             grid-row: 2/3;
-            border-radius: 1.6rem; 
+            border-bottom-right-radius: 1.6em;
+            border-top-right-radius: 1.6em;
+            
         }
         .newsletter-description{
             grid-column: 1/2;
             grid-row: 2/3;
             margin: 0;
-            padding: 4em 2em;
+            padding: 7em 2.5em;
             background-color: $White;
             border-bottom-left-radius: 1.6em;
-            border-top-left-radius: 1.6em 
+            border-top-left-radius: 1.6em;
+            .newsletter-description-heading{
+                &__info{
+                    margin: .5em 0;
+                    line-height: 150%;
+                }
+            }
+            .offers-area{
+                margin: 0;
+                &__info{
+                    margin: .2em 0;
+                }
+            } 
         }
     }
 }
