@@ -1,3 +1,23 @@
 @media(min-width: 768px){
+    .newsletter-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15% 70% 15%;
+        background-color: $Charcoal-Grey;
     
+        .newsletter-image-area{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            border-radius: 1.6rem; 
+        }
+        .newsletter-description{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin: 0;
+            padding: 4em 2em;
+            background-color: $White;
+            border-bottom-left-radius: 1.6em;
+            border-top-left-radius: 1.6em 
+        }
+    }
 }
