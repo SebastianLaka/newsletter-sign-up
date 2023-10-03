@@ -40,6 +40,9 @@ body {
     min-height: 100vh;
     width: 100%;
   }
+  .newsletter-body .newsletter-image-area-medium {
+    display: none;
+  }
   .newsletter-body .newsletter-image-area {
     border-bottom-left-radius: 1.6em;
     border-bottom-right-radius: 1.6em;
@@ -167,22 +170,39 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 15% 70% 15%;
-        grid-template-rows: 15% 70% 15%;
+    -ms-grid-rows: 10% 80% 10%;
+        grid-template-rows: 10% 80% 10%;
     background-color: #36384e;
+    max-width: 930px;
+    width: 100%;
   }
   .newsletter-body .newsletter-image-area {
     display: none;
   }
   .newsletter-body .newsletter-image-area-medium {
+    display: block;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    border-bottom-right-radius: 1.6em;
-    border-top-right-radius: 1.6em;
+    position: relative;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter-body .newsletter-image-area-medium__img {
+    width: 90%;
   }
   .newsletter-body .newsletter-description {
     -ms-grid-column: 1;
@@ -194,18 +214,18 @@ body {
     margin: 0;
     padding: 7em 2.5em;
     background-color: white;
-    border-bottom-left-radius: 1.6em;
-    border-top-left-radius: 1.6em;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
   }
   .newsletter-body .newsletter-description .newsletter-description-heading__info {
-    margin: .5em 0;
+    margin: 0.5em 0;
     line-height: 150%;
   }
   .newsletter-body .newsletter-description .offers-area {
     margin: 0;
   }
   .newsletter-body .newsletter-description .offers-area__info {
-    margin: .2em 0;
+    margin: 0.2em 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
