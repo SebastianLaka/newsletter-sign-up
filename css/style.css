@@ -26,7 +26,7 @@ body {
 }
 
 @media (min-width: 280px) {
-  .newsletter-body {
+  .newsletter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -37,18 +37,20 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 100vh;
     width: 100%;
   }
-  .newsletter-body .newsletter-image-area-medium {
+  .newsletter .newsletter-body {
+    min-height: 100vh;
+  }
+  .newsletter .newsletter-body .newsletter-image-area-medium {
     display: none;
   }
-  .newsletter-body .newsletter-image-area {
+  .newsletter .newsletter-body .newsletter-image-area {
     border-bottom-left-radius: 1.6em;
     border-bottom-right-radius: 1.6em;
     width: 100%;
   }
-  .newsletter-body .newsletter-description {
+  .newsletter .newsletter-body .newsletter-description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,16 +65,16 @@ body {
     margin: 6.5em 0;
     height: 100%;
   }
-  .newsletter-body .newsletter-description .newsletter-description-heading__header {
+  .newsletter .newsletter-body .newsletter-description .newsletter-description-heading__header {
     font-size: 4rem;
     color: #36384e;
   }
-  .newsletter-body .newsletter-description .newsletter-description-heading__info {
+  .newsletter .newsletter-body .newsletter-description .newsletter-description-heading__info {
     font-size: 1.6rem;
     padding: .5em 0;
     margin: 1em 0;
   }
-  .newsletter-body .newsletter-description .offers-area {
+  .newsletter .newsletter-body .newsletter-description .offers-area {
     margin: 1em 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,7 +88,7 @@ body {
             justify-content: space-between;
     list-style-type: none;
   }
-  .newsletter-body .newsletter-description .offers-area__info {
+  .newsletter .newsletter-body .newsletter-description .offers-area__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -97,12 +99,12 @@ body {
     font-weight: 700;
     color: #36384e;
   }
-  .newsletter-body .newsletter-description .offers-area__info--svg {
+  .newsletter .newsletter-body .newsletter-description .offers-area__info--svg {
     width: 1.6em;
     height: 1.6em;
     margin-right: 1em;
   }
-  .newsletter-body .newsletter-description .interactive-area .label-area {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .label-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,15 +113,15 @@ body {
             justify-content: space-between;
     margin-bottom: 1em;
   }
-  .newsletter-body .newsletter-description .interactive-area .label-area__e-mail {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .label-area__e-mail {
     font-weight: 700;
     font-size: 1.2rem;
     color: #36384e;
   }
-  .newsletter-body .newsletter-description .interactive-area .label-area__requierd {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .label-area__requierd {
     visibility: hidden;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -131,24 +133,24 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area__input, .newsletter-body .newsletter-description .interactive-area .verification-area__cta {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__input, .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__cta {
     width: 100%;
     padding: 1.4em;
     border-radius: 8px;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area__input::-webkit-input-placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta::-webkit-input-placeholder {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__input::-webkit-input-placeholder, .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__cta::-webkit-input-placeholder {
     font-size: 1.3rem;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area__input:-ms-input-placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta:-ms-input-placeholder {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__input:-ms-input-placeholder, .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__cta:-ms-input-placeholder {
     font-size: 1.3rem;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area__input::-ms-input-placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta::-ms-input-placeholder {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__input::-ms-input-placeholder, .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__cta::-ms-input-placeholder {
     font-size: 1.3rem;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area__input::placeholder, .newsletter-body .newsletter-description .interactive-area .verification-area__cta::placeholder {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__input::placeholder, .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__cta::placeholder {
     font-size: 1.3rem;
   }
-  .newsletter-body .newsletter-description .interactive-area .verification-area__cta {
+  .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area__cta {
     margin-top: 1.5em;
     border: none;
     background-color: #242742;
@@ -165,21 +167,24 @@ body {
 }
 
 @media (min-width: 768px) {
-  .newsletter-body {
+  .newsletter {
+    min-height: 100vh;
+    background-color: #36384e;
+  }
+  .newsletter .newsletter-body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 10% 80% 10%;
-        grid-template-rows: 10% 80% 10%;
-    background-color: #36384e;
-    max-width: 930px;
-    width: 100%;
+    -ms-grid-rows: 15% 70% 15%;
+        grid-template-rows: 15% 70% 15%;
+    max-width: 768px;
+    margin: 0 auto;
   }
-  .newsletter-body .newsletter-image-area {
+  .newsletter .newsletter-body .newsletter-image-area {
     display: none;
   }
-  .newsletter-body .newsletter-image-area-medium {
+  .newsletter .newsletter-body .newsletter-image-area-medium {
     display: block;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -201,10 +206,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .newsletter-body .newsletter-image-area-medium__img {
-    width: 90%;
+  .newsletter .newsletter-body .newsletter-image-area-medium__img {
+    width: 100%;
+    height: 500px;
+    margin: auto;
   }
-  .newsletter-body .newsletter-description {
+  .newsletter .newsletter-body .newsletter-description {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -212,19 +219,19 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     margin: 0;
-    padding: 7em 2.5em;
+    padding: 7em 4em;
     background-color: white;
     border-bottom-left-radius: 3em;
     border-top-left-radius: 3em;
   }
-  .newsletter-body .newsletter-description .newsletter-description-heading__info {
+  .newsletter .newsletter-body .newsletter-description .newsletter-description-heading__info {
     margin: 0.5em 0;
     line-height: 150%;
   }
-  .newsletter-body .newsletter-description .offers-area {
+  .newsletter .newsletter-body .newsletter-description .offers-area {
     margin: 0;
   }
-  .newsletter-body .newsletter-description .offers-area__info {
+  .newsletter .newsletter-body .newsletter-description .offers-area__info {
     margin: 0.2em 0;
   }
 }

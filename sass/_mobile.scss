@@ -1,10 +1,11 @@
 @media (min-width: 280px) {
-  .newsletter-body {
+  .newsletter{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    min-height: 100vh;
     width: 100%;
+  .newsletter-body {
+    min-height: 100vh;
     .newsletter-image-area-medium{
       display: none;
     }
@@ -93,7 +94,8 @@
     }
   }
 }
-@media(min-width: 475px){
+}
+@media(min-width: 475px){ 
   .newsletter-body{
     .newsletter-description{
       .newsletter-description-heading{

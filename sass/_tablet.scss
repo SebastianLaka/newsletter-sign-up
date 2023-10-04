@@ -1,12 +1,13 @@
 @media (min-width: 768px) {
-   
+   .newsletter{
+    min-height: 100vh;
+    background-color: $Charcoal-Grey;
   .newsletter-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10% 80% 10%;
-    background-color: $Charcoal-Grey;
-    max-width: 930px;
-    width: 100%;
+    grid-template-rows: 15% 70% 15%;
+    max-width: 768px;
+    margin: 0 auto;
     .newsletter-image-area {
       display: none;
     }
@@ -22,14 +23,16 @@
       justify-content: center;
       align-items: center;
       &__img{
-        width: 90%;
+        width: 100%;
+        height: 500px;
+        margin: auto;
       }
     }
     .newsletter-description {
       grid-column: 1/2;
       grid-row: 2/3;
       margin: 0;
-      padding: 7em 2.5em;
+      padding: 7em 4em;
       background-color: $White;
       border-bottom-left-radius: 3em;
       border-top-left-radius: 3em;
@@ -47,4 +50,5 @@
       }
     }
   }
+}
 }
