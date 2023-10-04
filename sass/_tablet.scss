@@ -15,17 +15,17 @@
       display: block;
       grid-column: 2/3;
       grid-row: 2/3;
-      position: relative;
+      
       border-bottom-right-radius: 3em;
       border-top-right-radius: 3em;
       background-color: $White;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      
       &__img{
         width: 100%;
-        height: 500px;
-        margin: auto;
+        height: 535px;
+        margin: 2.5em 2em 2.5em 0;
+        
       }
     }
     .newsletter-description {

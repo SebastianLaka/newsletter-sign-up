@@ -192,24 +192,17 @@ body {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    position: relative;
     border-bottom-right-radius: 3em;
     border-top-right-radius: 3em;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .newsletter .newsletter-body .newsletter-image-area-medium__img {
     width: 100%;
-    height: 500px;
-    margin: auto;
+    height: 535px;
+    margin: 2.5em 2em 2.5em 0;
   }
   .newsletter .newsletter-body .newsletter-description {
     -ms-grid-column: 1;
