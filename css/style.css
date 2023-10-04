@@ -212,13 +212,13 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     margin: 0;
-    padding: 5em 4em;
+    padding: 7em 4em;
     background-color: white;
     border-bottom-left-radius: 3em;
     border-top-left-radius: 3em;
   }
   .newsletter .newsletter-body .newsletter-description .newsletter-description-heading__info {
-    margin: 0.5em 0;
+    margin: 0.2em 0;
     line-height: 150%;
   }
   .newsletter .newsletter-body .newsletter-description .offers-area {
@@ -226,6 +226,7 @@ body {
   }
   .newsletter .newsletter-body .newsletter-description .offers-area__info {
     margin: 0.1em 0;
+    padding: .5em 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

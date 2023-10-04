@@ -32,13 +32,13 @@
       grid-column: 1/2;
       grid-row: 2/3;
       margin: 0;
-      padding: 5em 4em;
+      padding: 7em 4em;
       background-color: $White;
       border-bottom-left-radius: 3em;
       border-top-left-radius: 3em;
       .newsletter-description-heading {
         &__info {
-          margin: 0.5em 0;
+          margin: 0.2em 0;
           line-height: 150%;
         }
       }
@@ -46,6 +46,7 @@
         margin: 0;
         &__info {
           margin: 0.1em 0;
+          padding: .5em 0;
         }
       }
     }
