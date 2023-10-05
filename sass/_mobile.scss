@@ -5,6 +5,7 @@
     flex-direction: column;
     width: 100%;
   .newsletter-body {
+    display: none;
     min-height: 100vh;
     .newsletter-image-area-medium{
       display: none;
@@ -19,7 +20,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 0 1.5em;
-      margin: 6.5em 0;
+      margin: 6.5em 0 0 ;
       height: 100%;
       
       .newsletter-description-heading{
@@ -90,6 +91,46 @@
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+  .newsletter-succes{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 100vh;
+    .newsletter-succes-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80vh;
+      padding: 0 2.25em;
+      .newsletter-about{
+        &__header{
+          font-size: 4rem;
+          font-weight: $bold;
+          color: $Charcoal-Grey;
+          margin: 1em 0;
+        }
+        &__info{
+          font-size: 1.6rem;
+          line-height: 150%;
+          font-weight: $light;
+          color: $Charcoal-Grey;
+          &--email{
+            font-weight: $bold;
+          }
+        }
+      }
+      &__cta{
+        padding: 1em 2em;
+        font-size: 1.6rem;
+        font-weight: $bold;
+        margin: 2em 0;
+        border: none;
+        border-radius: 0.4em;
+        background-color: $Charcoal-Grey;
+        color: $White;
       }
     }
   }
