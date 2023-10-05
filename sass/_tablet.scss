@@ -3,7 +3,7 @@
     min-height: 100vh;
     background-color: $Charcoal-Grey;
   .newsletter-body {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 15% 70% 15%;
     max-width: 768px;
@@ -48,6 +48,25 @@
           padding: .5em 0;
         }
       }
+    }
+  }
+  .newsletter-succes{
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin: 0 auto;
+    
+    .newsletter-succes-body{
+      background-color: $White;
+      height: 50%;
+      border-radius: 3.2rem;
+      padding: 4.75em;
+      .newsletter-about{
+      &__info{
+        font-size: 1.5rem;
+        margin-right: 1em;
+      }
+    }
     }
   }
 }

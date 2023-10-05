@@ -225,8 +225,7 @@ body {
     background-color: #36384e;
   }
   .newsletter .newsletter-body {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 15% 70% 15%;
@@ -285,6 +284,26 @@ body {
   .newsletter .newsletter-body .newsletter-description .offers-area__info {
     margin: 0.1em 0;
     padding: .5em 0;
+  }
+  .newsletter .newsletter-succes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .newsletter .newsletter-succes .newsletter-succes-body {
+    background-color: white;
+    height: 50%;
+    border-radius: 3.2rem;
+    padding: 4.75em;
+  }
+  .newsletter .newsletter-succes .newsletter-succes-body .newsletter-about__info {
+    font-size: 1.5rem;
+    margin-right: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
