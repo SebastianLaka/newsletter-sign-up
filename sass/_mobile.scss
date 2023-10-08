@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
   .newsletter-body {
-    display: none;
+    display: block;
     min-height: 100vh;
     .newsletter-image-area-medium{
       display: none;
@@ -20,7 +20,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 0 1.5em;
-      margin: 6.5em 0 0 ;
+      margin: 6.5em 0 3.5em 0;
       height: 100%;
       
       .newsletter-description-heading{
@@ -95,7 +95,7 @@
     }
   }
   .newsletter-succes{
-    display: flex;
+    display: none;
     justify-content: flex-end;
     flex-direction: column;
     min-height: 100vh;

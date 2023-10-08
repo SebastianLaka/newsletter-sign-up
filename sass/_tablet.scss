@@ -3,7 +3,7 @@
     min-height: 100vh;
     background-color: $Charcoal-Grey;
   .newsletter-body {
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 15% 70% 15%;
     max-width: 768px;
@@ -51,6 +51,7 @@
     }
   }
   .newsletter-succes{
+    display: none;
     justify-content: center;
     align-items: center;
     width: 450px;
