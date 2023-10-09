@@ -121,6 +121,9 @@ body {
   }
   .newsletter .newsletter-body .newsletter-description .interactive-area .label-area__requierd {
     visibility: hidden;
+    color: #ff6257;
+    font-weight: 700;
+    font-size: 1.2rem;
   }
   .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area {
     display: -webkit-box;

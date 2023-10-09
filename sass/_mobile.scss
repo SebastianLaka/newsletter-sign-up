@@ -67,6 +67,9 @@
           }
           &__requierd {
             visibility: hidden;
+            color: $primary;
+            font-weight: $bold;
+            font-size: 1.2rem;
           }
         }
         .verification-area {
