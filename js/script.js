@@ -2,17 +2,20 @@
 
 const input = document.querySelector(".verification-area__input")
 const ctaButton = document.querySelector('.verification-area__cta')
-const newsletterSuccesPopup = document.querySelector('.newsletter-succes')
 const emailInContent = document.querySelector('.newsletter-about__info--email')
-console.log(newsletterSuccesPopup, emailInContent);
+const newsletterSuccesPopup = document.querySelector('.newsletter-succes')
+const newsletter = document.querySelector('.newsletter-body')
+const errorInfo = document.querySelector('.label-area__requierd')
 ctaButton.addEventListener('click', ()=>{
-    
-    
-    let regex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+    let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]')
     const validateEmail = function(){
-    if(input.value === ''){
-        const errorInfo = document.querySelector('.label-area__requierd')
-        errorInfo.style.visibility = 'visible';
+     if(input.value === 'email@company.com'){
+            newsletterSuccesPopup.style.display = 'flex';
+            errorInfo.style.visibility = 'hidden';
+            newsletter.style.display = 'none';
+    }
+    else if(input.value === ''){
+        errorInfo.style.visibility = 'visible'; 
     } 
 }
 validateEmail();

@@ -95,7 +95,9 @@
         }
       }
     }
+    
   }
+ 
   .newsletter-succes{
     display: none;
     justify-content: flex-end;
@@ -134,6 +136,9 @@
         background-color: $Charcoal-Grey;
         color: $White;
       }
+    }
+    .newsletter-succes-show{
+      display: flex;
     }
   }
 }

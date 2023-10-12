@@ -212,6 +212,11 @@ body {
     background-color: #36384e;
     color: white;
   }
+  .newsletter .newsletter-succes .newsletter-succes-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (min-width: 475px) {
