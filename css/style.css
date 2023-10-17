@@ -40,7 +40,6 @@ body {
     width: 100%;
   }
   .newsletter .newsletter-body {
-    display: block;
     min-height: 100vh;
   }
   .newsletter .newsletter-body .newsletter-image-area-medium {
@@ -72,7 +71,7 @@ body {
   }
   .newsletter .newsletter-body .newsletter-description .newsletter-description-heading__info {
     font-size: 1.6rem;
-    padding: .5em 0;
+    padding: 0.5em 0;
     margin: 1em 0;
   }
   .newsletter .newsletter-body .newsletter-description .offers-area {
@@ -207,15 +206,9 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     margin: 2em 0;
-    border: none;
     border-radius: 0.4em;
     background-color: #36384e;
     color: white;
-  }
-  .newsletter .newsletter-succes .newsletter-succes-show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 

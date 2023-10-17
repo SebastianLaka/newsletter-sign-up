@@ -1,153 +1,148 @@
 @media (min-width: 280px) {
-  .newsletter{
+  .newsletter {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-  .newsletter-body {
-    display: block;
-    min-height: 100vh;
-    .newsletter-image-area-medium{
-      display: none;
-    }
-    .newsletter-image-area {
-      border-bottom-left-radius: 1.6em;
-      border-bottom-right-radius: 1.6em;
-      width: 100%;
-    }
-    .newsletter-description {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 0 1.5em;
-      margin: 6.5em 0 3.5em 0;
-      height: 100%;
-      
-      .newsletter-description-heading{
-      &__header {
-        font-size: 4rem;
-        color: $Charcoal-Grey;
+    .newsletter-body {
+      min-height: 100vh;
+      .newsletter-image-area-medium {
+        display: none;
       }
-      &__info {
-        font-size: 1.6rem;
-        padding: .5em 0;
-        margin: 1em 0;
+      .newsletter-image-area {
+        border-bottom-left-radius: 1.6em;
+        border-bottom-right-radius: 1.6em;
+        width: 100%;
       }
-    }
-      .offers-area {
-        margin: 1em 0;
+      .newsletter-description {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        list-style-type: none;
-        &__info {
-          display: flex;
-          margin: 0.5em 0;
-          padding: 0.5em 0;
-          line-height: 150%;
-          font-size: 1.4rem;
-          font-weight: $bold;
-          color: $Charcoal-Grey;
-          &--svg {
-            width: 1.6em;
-            height: 1.6em;
-            margin-right: 1em;
-          }
-        }
-      }
-      .interactive-area {
-        .label-area {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 1em;
-          &__e-mail {
-            font-weight: $bold;
-            font-size: 1.2rem;
+        padding: 0 1.5em;
+        margin: 6.5em 0 3.5em 0;
+        height: 100%;
+
+        .newsletter-description-heading {
+          &__header {
+            font-size: 4rem;
             color: $Charcoal-Grey;
           }
-          &__requierd {
-            visibility: hidden;
-            color: $primary;
-            font-weight: $bold;
-            font-size: 1.2rem;
+          &__info {
+            font-size: 1.6rem;
+            padding: 0.5em 0;
+            margin: 1em 0;
           }
         }
-        .verification-area {
+        .offers-area {
+          margin: 1em 0;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          &__input, &__cta{
-            width: 100%;
-            padding: 1.4em;
-            border-radius: 8px;
-            &::placeholder {
-              font-size: 1.3rem;
+          list-style-type: none;
+          &__info {
+            display: flex;
+            margin: 0.5em 0;
+            padding: 0.5em 0;
+            line-height: 150%;
+            font-size: 1.4rem;
+            font-weight: $bold;
+            color: $Charcoal-Grey;
+            &--svg {
+              width: 1.6em;
+              height: 1.6em;
+              margin-right: 1em;
             }
           }
-          &__cta {
-            margin-top: 1.5em;
-            border: none;
-            background-color: $Dark-Slate-Grey;
-            color: $White;
-            font-weight: $bold;
-            cursor: pointer;
+        }
+        .interactive-area {
+          .label-area {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+            &__e-mail {
+              font-weight: $bold;
+              font-size: 1.2rem;
+              color: $Charcoal-Grey;
+            }
+            &__requierd {
+              visibility: hidden;
+              color: $primary;
+              font-weight: $bold;
+              font-size: 1.2rem;
+            }
+          }
+          .verification-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__input,
+            &__cta {
+              width: 100%;
+              padding: 1.4em;
+              border-radius: 8px;
+              &::placeholder {
+                font-size: 1.3rem;
+              }
+            }
+            &__cta {
+              margin-top: 1.5em;
+              border: none;
+              background-color: $Dark-Slate-Grey;
+              color: $White;
+              font-weight: $bold;
+              cursor: pointer;
+              
+            }
           }
         }
       }
     }
-    
-  }
- 
-  .newsletter-succes{
-    display: none;
-    justify-content: flex-end;
-    flex-direction: column;
-    min-height: 100vh;
-    .newsletter-succes-body{
-      display: flex;
+    .newsletter-succes {
+      display: none;
+      justify-content: flex-end;
       flex-direction: column;
-      justify-content: space-between;
-      height: 80vh;
-      padding: 0 2.25em;
-      .newsletter-about{
-        &__header{
-          font-size: 4rem;
-          font-weight: $bold;
-          color: $Charcoal-Grey;
-          margin: 1em 0;
-        }
-        &__info{
-          font-size: 1.6rem;
-          line-height: 150%;
-          font-weight: $light;
-          color: $Charcoal-Grey;
-          &--email{
+      min-height: 100vh;
+      .newsletter-succes-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80vh;
+        padding: 0 2.25em;
+        .newsletter-about {
+          &__header {
+            font-size: 4rem;
             font-weight: $bold;
+            color: $Charcoal-Grey;
+            margin: 1em 0;
+          }
+          &__info {
+            font-size: 1.6rem;
+            line-height: 150%;
+            font-weight: $light;
+            color: $Charcoal-Grey;
+            &--email {
+              font-weight: $bold;
+            }
           }
         }
+        &__cta {
+          padding: 1em 2em;
+          font-size: 1.6rem;
+          font-weight: $bold;
+          margin: 2em 0;
+          border-radius: 0.4em;
+          background-color: $Charcoal-Grey;
+          color: $White;
+        }
       }
-      &__cta{
-        padding: 1em 2em;
-        font-size: 1.6rem;
-        font-weight: $bold;
-        margin: 2em 0;
-        border: none;
-        border-radius: 0.4em;
-        background-color: $Charcoal-Grey;
-        color: $White;
-      }
-    }
-    .newsletter-succes-show{
-      display: flex;
     }
   }
 }
-}
-@media(min-width: 475px){ 
-  .newsletter-body{
-    .newsletter-description{
-      .newsletter-description-heading{
-        &__header{
+@media (min-width: 475px) {
+  .newsletter-body {
+    .newsletter-description {
+      .newsletter-description-heading {
+        &__header {
           font-size: 4.5rem;
         }
       }
