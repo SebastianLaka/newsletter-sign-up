@@ -70,6 +70,9 @@
               font-weight: $bold;
               font-size: 1.2rem;
             }
+            .show-error{
+              visibility: visible;
+            }
           }
           .verification-area {
             display: flex;
@@ -96,6 +99,9 @@
           }
         }
       }
+    }
+    .hide-newsletter{
+      display: none;
     }
     .newsletter-succes {
       display: none;

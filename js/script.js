@@ -10,23 +10,24 @@ const dissMissCTA = document.querySelector(".newsletter-succes-body__cta");
 const emailForValidation = document.getElementById("email");
 
 ctaButton.addEventListener("click", e => {
+  e.preventDefault();
   const validateEmail = function () {
-    e.preventDefault();
-    const isValid = function () {
-        let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-         const active = regex.test();
-         return active
+    const isValid = function (email) {
+        const regex = /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
+         regex.test(email)
       };
-      isValid();
-    if (input.value === isValid()) {
+      isValid(email);
+
+    if (input.value ===  'email@company.com') {
       newsletterSuccesPopup.style.display = "flex";
       errorInfo.style.visibility = "hidden";
       newsletter.style.display = "none";
       emailInContent.innetText = emailForValidation;
     } else if (input.value === "") {
-      errorInfo.style.visibility = "visible";
+      errorInfo.classList.add('show-error')
     }
   };
+  validateEmail();
 
   const backToMain = function () {
     if (dissMissCTA) {
@@ -35,5 +36,4 @@ ctaButton.addEventListener("click", e => {
     }
   };
   dissMissCTA.addEventListener("click", backToMain);
-  validateEmail();
 });

@@ -124,6 +124,9 @@ body {
     font-weight: 700;
     font-size: 1.2rem;
   }
+  .newsletter .newsletter-body .newsletter-description .interactive-area .label-area .show-error {
+    visibility: visible;
+  }
   .newsletter .newsletter-body .newsletter-description .interactive-area .verification-area {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,6 +163,9 @@ body {
     color: white;
     font-weight: 700;
     cursor: pointer;
+  }
+  .newsletter .hide-newsletter {
+    display: none;
   }
   .newsletter .newsletter-succes {
     display: none;
