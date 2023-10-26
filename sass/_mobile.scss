@@ -6,6 +6,12 @@
     width: 100%;
     .newsletter-body {
       min-height: 100vh;
+      .newsletter-show{
+        display: flex;
+      }
+      .newsletter-hide{
+        display: none;
+      }
       .newsletter-image-area-medium {
         display: none;
       }
@@ -100,9 +106,6 @@
         }
       }
     }
-    .hide-newsletter{
-      display: none;
-    }
     .newsletter-succes {
       display: none;
       justify-content: flex-end;
@@ -141,6 +144,9 @@
           color: $White;
         }
       }
+    }
+    .show-newsletter-succes{
+      display: flex;
     }
   }
 }

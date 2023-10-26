@@ -8,6 +8,8 @@
     grid-template-rows: 15% 70% 15%;
     max-width: 768px;
     margin: 0 auto;
+    
+    
     .newsletter-image-area {
       display: none;
     }
@@ -69,6 +71,9 @@
       }
     }
     }
+  }
+  .show-newsletter-succes{
+    display: flex;
   }
 }
 }
