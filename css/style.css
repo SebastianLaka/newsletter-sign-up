@@ -42,14 +42,6 @@ body {
   .newsletter .newsletter-body {
     min-height: 100vh;
   }
-  .newsletter .newsletter-body .newsletter-show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .newsletter .newsletter-body .newsletter-hide {
-    display: none;
-  }
   .newsletter .newsletter-body .newsletter-image-area-medium {
     display: none;
   }
@@ -171,6 +163,9 @@ body {
     color: white;
     font-weight: 700;
     cursor: pointer;
+  }
+  .newsletter .newsletter-body .newsletter-hide {
+    display: none;
   }
   .newsletter .newsletter-succes {
     display: none;
@@ -300,6 +295,9 @@ body {
   .newsletter .newsletter-body .newsletter-description .offers-area__info {
     margin: 0.1em 0;
     padding: .5em 0;
+  }
+  .newsletter .newsletter-body .newsletter-hide {
+    display: none;
   }
   .newsletter .newsletter-succes {
     display: none;
