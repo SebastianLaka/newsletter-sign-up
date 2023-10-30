@@ -2,15 +2,15 @@
    .newsletter{
     min-height: 100vh;
     background-color: $Charcoal-Grey;
-    .newsletter-hide{
-      display: none;
-    }
   .newsletter-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 15% 70% 15%;
     max-width: 768px;
     margin: 0 auto;
+    .hidden{
+      display: none;
+    }
     .newsletter-image-area {
       display: none;
     }

@@ -6,8 +6,8 @@ const input = document.querySelector(".verification-area__input");
 const ctaButton = document.querySelector(".verification-area__cta");
 const emailInContent = document.querySelector(".newsletter-about__info--email");
 const newsletterSuccesPopup = document.querySelector(".newsletter-succes");
-console.log(newsletterSuccesPopup);
 const errorInfo = document.querySelector(".label-area__requierd");
+console.log(newsletterSuccesPopup);
 const dissMissCTA = document.querySelector(".newsletter-succes-body__cta");
 
 ctaButton.addEventListener("click", () => {
@@ -17,27 +17,25 @@ ctaButton.addEventListener("click", () => {
   //    regex.test(email)
   // };
   // isValid(email);
+  const showError = function(){
+    errorInfo.classList.add('show-error')
+  }
   const showPopup = function(){
     newsletterSuccesPopup.classList.add('show-newsletter-succes')
-    newsletter.classList.add('newsletter-hide')
+    newsletter.classList.add('newsletter-hidden')
     errorInfo.classList.remove('show-error')
   }
   const validateEmail = function () {
-    if (input.value ===  'email@company.com') {
+    if (input.value === 'email@company.com') {
       showPopup();
     }else{
-      errorInfo.classList.add('show-error')
+      showError();
     }
   };
   validateEmail();
 
   const backToMain = function () {
-    // if (dissMissCTA) {
-    //   newsletterSuccesPopup.style.display = "none";
-    //   newsletter.style.display = "grid";
-    // }
     newsletterSuccesPopup.classList.remove('show-newsletter-succes')
   };
   dissMissCTA.addEventListener("click", backToMain);
-  
 });
