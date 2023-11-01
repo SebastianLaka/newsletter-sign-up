@@ -23,7 +23,7 @@ ctaButton.addEventListener("click", (e) => {
   };
   const validateEmail = function () {
     const regex =
-      /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
+    /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     if (regex.test(input.value)) {
       showPopup();
     } else {
