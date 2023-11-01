@@ -4,11 +4,7 @@
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-   
     .newsletter-body {
-      .hidden{
-        display: none;
-      }
       display: block;
       min-height: 100vh;
       .newsletter-image-area-medium {
@@ -99,11 +95,14 @@
               color: $White;
               font-weight: $bold;
               cursor: pointer;
-              
             }
           }
+
         }
       }
+    }
+    .hidden{
+      display: none;
     }
     .newsletter-succes {
       display: none;

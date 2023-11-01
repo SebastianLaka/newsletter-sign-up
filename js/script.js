@@ -22,10 +22,10 @@ ctaButton.addEventListener("click", () => {
   }
   const showPopup = function(){
     newsletterSuccesPopup.classList.add('show-newsletter-succes')
-    newsletter.classList.add('newsletter-hidden')
+    newsletter.classList.add('hidden')
     errorInfo.classList.remove('show-error')
   }
-  const validateEmail = function () {
+  const validateEmail = function() {
     if (input.value === 'email@company.com') {
       showPopup();
     }else{
@@ -33,8 +33,8 @@ ctaButton.addEventListener("click", () => {
     }
   };
   validateEmail();
-
-  const backToMain = function () {
+  const backToMain = function() {
+    newsletter.classList.remove('hidden')
     newsletterSuccesPopup.classList.remove('show-newsletter-succes')
   };
   dissMissCTA.addEventListener("click", backToMain);

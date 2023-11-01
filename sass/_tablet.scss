@@ -8,9 +8,7 @@
     grid-template-rows: 15% 70% 15%;
     max-width: 768px;
     margin: 0 auto;
-    .hidden{
-      display: none;
-    }
+   
     .newsletter-image-area {
       display: none;
     }
@@ -53,14 +51,15 @@
       }
     }
   }
- 
+  .hidden{
+    display: none;
+  }
   .newsletter-succes{
     display: none;
     justify-content: center;
     align-items: center;
     width: 450px;
     margin: 0 auto;
-    
     .newsletter-succes-body{
       background-color: $White;
       height: 50%;

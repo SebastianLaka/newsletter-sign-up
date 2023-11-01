@@ -40,6 +40,7 @@ body {
     width: 100%;
   }
   .newsletter .newsletter-body {
+    display: block;
     min-height: 100vh;
   }
   .newsletter .newsletter-body .newsletter-image-area-medium {
@@ -164,7 +165,7 @@ body {
     font-weight: 700;
     cursor: pointer;
   }
-  .newsletter .newsletter-body .newsletter-hide {
+  .newsletter .hidden {
     display: none;
   }
   .newsletter .newsletter-succes {
@@ -296,7 +297,7 @@ body {
     margin: 0.1em 0;
     padding: .5em 0;
   }
-  .newsletter .newsletter-body .newsletter-hide {
+  .newsletter .hidden {
     display: none;
   }
   .newsletter .newsletter-succes {
